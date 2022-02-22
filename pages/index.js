@@ -25,7 +25,6 @@ export default function Home({ articles, cards }) {
           </div>
         </section>
       </main>
-      <Footer/>
     </div>
   );
 }
