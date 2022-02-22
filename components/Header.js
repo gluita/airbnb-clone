@@ -7,17 +7,28 @@ import {
 } from "@heroicons/react/outline";
 function Header() {
   return (
-    <header className="flex items-center shadow-md w-full h-[60px]">
-      <div className="flex justify-between px-2 items-center w-full h-full gap-x-3">
-        <div className="w-[50px] h[50px]">
-          <img src="/images/logo.png" alt="" className="w-full h-ful" />
-        </div>
-        <div className="">
-          <input
-            type="text"
-            placeholder="search"
-            className="outline-none  rounded-md shadow-md h-[33px] w-[200px]"
+    <header className="w-full px-[2.4rem]">
+      <div className="flex items-center gap-x-5">
+        <div className="relative flex items-center h-[51px] my-auto w-[80px]">
+          <Image
+            src="/images/logo.png"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="left"
           />
+        </div>
+        <div className="flex w-full">
+          <div className="flex gap-x-7">
+            <p>Menu</p>
+            <p>Rewards</p>
+          </div>
+          <div className="ml-auto border-[1px-solid] rounded-full shadow-lg px-1">
+            <input
+              type="text"
+              className="outline-none rounded-full  px-2 font-thin"
+              placeholder="search"
+            />
+          </div>
         </div>
       </div>
     </header>

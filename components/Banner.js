@@ -3,7 +3,7 @@ function Banner() {
   return (
     <div className="relative h-[300px] w-full">
       <img
-        src="/images/banner.jpg" layout="fill"
+        src="/images/banner.jpg"
         className="h-full w-full object-cover"
       />
       <div className="absolute top-2/4 w-full text-center text-white">
